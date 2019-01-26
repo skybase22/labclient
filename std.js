@@ -11,9 +11,13 @@ for(let i = 0 ; i < a.length ; i++)
     {
         process.exit()
     }
-    else if(a == arc)
+    else if(a == arc )
     {
         console.log('palindrome')
+    }
+    else if(a.toUppercase== arc.toUppercase)
+    {
+        console.log('palindrome non s')
     }
     else
     {
