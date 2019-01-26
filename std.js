@@ -1,7 +1,7 @@
 let stdin = process.openStdin()
 stdin.addListener("data", (d) => {
  var a = d.toString().trim()
- //stdin.end('hello')
+ 
  var arc = ''
 for(let i = 0 ; i < a.length ; i++)
 {
