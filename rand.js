@@ -1,17 +1,19 @@
-var fyear = require('./year.js')
+var ran = require('./random.js')
 
 let stdin = process.openStdin()
 
 
 console.log('Enter your want a or b')
 stdin.addListener("data", (d) => {
-    //var a = d.toString().trim()
-   console.log(fyear.yearc(d[0]))
-  
+    var a = d.toString().trim()
+    var ia = parseInt(a,10)
     
-
-   
-   process.exit()
+    if( ran.random(ia) === true)
+    {
+        stdin.destroy()
+    }
+    
+   //process.exit()
 
 })  
    

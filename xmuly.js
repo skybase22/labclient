@@ -1,5 +1,3 @@
-var mul = function CurriedAdd(x){
-    console.log(x)
-    return function(y){ return  x*y }}
+var mul = (x,y) => x*y
 
     exports.mul = mul
