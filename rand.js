@@ -3,7 +3,7 @@ var ran = require('./random.js')
 let stdin = process.openStdin()
 
 
-console.log('Enter your want a or b')
+console.log('Enter your Number!')
 stdin.addListener("data", (d) => {
     var a = d.toString().trim()
     var ia = parseInt(a,10)
